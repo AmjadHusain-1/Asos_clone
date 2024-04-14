@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+    <link rel="stylesheet" href="men.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <script>
+    // log in Authenticated Start
+    let sigUp1 = localStorage.getItem("userDetail")
+
+    let logIn1 =localStorage.getItem("isAutho")
+
+    if(!sigUp1){
+
+    window.location.href="signUp_LogIn/SignUp.html"
+
+    }else if(logIn1==="Not Authenticated"){
+        window.location.href="signUp_Login/Login.html"
+
+    }
+   // log in Authenticated end
+
+</script>
+  
+  
+  
+    <!-- Display Data Start -->
+    <div  id="prodFilters">
+        <div>
+            
+
+
+
+            <h3>Filters</h3>
+            <label class="lable" for="chooseRate">Sort By Price:</label>
+            <select id="chooseRate" class="select" onchange="sortPrice()">
+                <option value="">Select</option>
+
+                <option value="1">Low To High</option>
+                <option value="2">High to Low</option>
+
+            </select>
+            <br><br>
+            <br>
+            <label class="lable" for="chooseRate">Choose Rating</label>
+            <select id="chooseRate" class="select" onchange="sortRating()">
+                <option value="">Select</option>
+
+                <option value="1">Low To High</option>
+                <option value="2">High to Low</option>
+
+            </select>
+            <br>
+            <br>
+            <!-- <br><br><br><br> -->
+            
+        </div>
+        
+
+        
+        <div id="product">
+            
+            <!-- <h3></h3>
+            <h3>men</h3>
+            <br> -->
+            <!-- <div class="filtButtonHorizontal">
+                <button onclick="newSort()" class="customButton">
+                    <span class="buttonText">New</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg" alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Beststsellers</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Sephora Collection</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/sephoracollection.svg"
+                        alt="">
+                </button>
+            </div> -->
+            
+            
+        </div>
+    </div>
+
+    <div class="social">
+        <div class="socioicons">
+          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="">
+          <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="">
+          <img src="https://cdn-icons-png.flaticon.com/128/1409/1409941.png" alt="">
+          <p>|</p>
+          <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="">
+          <img src="https://cdn-icons-png.flaticon.com/128/196/196578.png" alt="">
+          <img src="https://cdn-icons-png.flaticon.com/128/11378/11378315.png" alt="">
+        </div>
+      </div>
+      <br>
+      <hr>
+  
+      <div class="foot1">
+        <div class="col1" >
+          <h3>HELP & INFORMATION </h3>
+          <ul style="list-style-type: none;">
+            <li>Help</li>
+            <li>Track Order</li>
+            <li>Delivery & return</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+  
+          <div class="col2">
+        <h3>ABOUT ASOS </h3>
+          <ul style="list-style-type: none;">
+            <li>ABOUT US</li>
+            <li>Career At ASOS</li>
+            <li>Corporate responsibility</li>
+            <li>Investor's site</li>
+          </ul>
+        </div>
+  
+        <div class="col3">  
+        <h3>MORE FROM ASOS </h3>
+          <ul style="list-style-type: none;">
+            <li>Mobile and ASOS apps</li>
+            <li>ASOS Marketplace</li>
+            <li>Gift vouchers</li>
+            <li>Black Friday</li>
+            <li>ASOS x Thrift+</li>
+            <li>Discover the ASOS Credit Card</li>
+            <li>Help Improve the ASOS Website</li>
+          </ul>
+        </div>
+  
+        
+        </div>
+      </div>
+  
+  
+      
+      <footer>
+        <div>
+        <p>&copy;2024 ASOS </p>
+      
+      <div><p>Privacy & cookies | T&C | Accessibility</p></div>
+    </div>
+  
+      </footer>
+
+</body>
+
+</html>
+
+
+<script src="./men.js">
+
+</script>
